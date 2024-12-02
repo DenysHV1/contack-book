@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.username {
+  font-weight: 700;
+  color: #fff;
+}
+
+.logoutButton {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #00b068;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 120px;
+  transition: background-color, color, transform 350ms, 350ms,
+    350ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.logoutButton:hover {
+  background-color: #017746;
+  color: rgba(255, 255, 255, 0.874);
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 440px) {
+  .wrapper {
+    padding: 10px;
+    border-top: 1px solid white;
+  }
+}

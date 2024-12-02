@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: -webkit-linear-gradient(90deg, #0f134f, #273270, #494c8c);
+  background: linear-gradient(90deg, #0f134f, #273270, #494c8c);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+button {
+  padding: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 8px;
+  font-weight: 700;
+  background-color: darkgrey;
+}
+
+button:hover,
+button:focus {
+  color: blue;
+  background-color: lightgrey;
+}
+
+input {
+  padding: 4px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

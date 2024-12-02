@@ -1,0 +1,24 @@
+.activeLink {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: 700;
+  color: #00b068;
+  white-space: nowrap;
+}
+
+.noActiveLink {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+
+.authNavContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
