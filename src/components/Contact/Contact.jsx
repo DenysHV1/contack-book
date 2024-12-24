@@ -4,7 +4,6 @@ import './react-confirm-alert.css';
 
 import { FaUser } from 'react-icons/fa6';
 import { TiDelete } from 'react-icons/ti';
-import { FaPhoneAlt } from 'react-icons/fa';
 
 import { deleteContact } from '../../redux/contacts/operations';
 import { useDispatch } from 'react-redux';
@@ -33,12 +32,13 @@ const Contact = ({ contact }) => {
   return (
     <li className={css.contactItem}>
       <p>
-        <FaUser style={{ color: 'white' }} /> {contact.name}
+        <FaUser style={{ color: 'white' }} className={css.user_icon} />
       </p>
+      <div className={css.info_container}>
+        <p className={css.info_item}>{contact.name}</p>
+        <p className={css.info_item}>{contact.number}</p>
+      </div>
 
-      <p>
-        <FaPhoneAlt style={{ color: 'white' }} /> {contact.number}
-      </p>
       <button
         className={css.contactButton}
         type="button"

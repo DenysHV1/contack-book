@@ -28,6 +28,8 @@
   text-shadow: 1px 1px 1px rgb(255, 255, 255);
   font-weight: 200;
   font-size: 20px;
+  color: rgba(255, 255, 255, 0.288);
+  font-family: 'Poppins', sans-serif;
 }
 
 .input:focus {

@@ -1,29 +1,48 @@
 .contactItem {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  gap: 10px;
+  position: relative;
   padding: 0 10px;
-  gap: 20px;
-  background-color: aliceblue;
-  border-radius: 5px;
-  width: 100%;
-  background-color: #00b068;
+  padding: 40px 30px;
+  max-width: 250px;
+  min-width: 250px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  background-color: rgba(255, 255, 255, 0.121);
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.contactItem p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-weight: 600;
-  color: rgb(10, 10, 10);
-  font-size: 18px;
-  width: 33%;
+.user_icon{
+  width: 80px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.121);
+  padding: 10px;
+  border-radius: 50%;
 }
 
+.info_container{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 15px;
+}
+
+.info_item{
+  color: white;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+
+
+
 .contactButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   background-color: transparent;
   color: rgb(0, 0, 0);
   border-radius: 5px;
@@ -38,21 +57,3 @@
   margin: 0;
 }
 
-@media screen and (max-width: 460px) {
-  .contactItem {
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    position: relative;
-  }
-
-  .contactItem p {
-    margin: 0;
-  }
-
-  .contactButton {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-}

@@ -1,0 +1,94 @@
+.headerBanner {
+  display: flex;
+  width: 106.4%;
+  margin-left: -3.2%;
+  height: 100vh;
+  position: relative;
+  align-items: center;
+}
+.headerBanner > video {
+  display: block;
+  position: absolute;
+  width: 104%;
+  margin-left: -2%;
+  object-fit: cover;
+  height: 100%;
+  opacity: 0.2;
+}
+.headerBanner > img {
+  display: block;
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  opacity: 0.72;
+}
+.headerBanner > img:last-child {
+  opacity: 0.52;
+}
+.headerBanner > div {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  max-width: 844px;
+  padding: 20px;
+}
+
+.headerBanner > div > p:first-child {
+  font-size: 46px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+.headerBanner > div > p:last-of-type {
+  font-size: 24px;
+  font-weight: medium;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+.headerBanner > div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 27px;
+  margin-top: 26px;
+}
+
+.headerBanner > div > div > a {
+  display: block;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background-color: #000000;
+  border-radius: 49px;
+  border: 0px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 19px;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+}
+
+
+@media screen and (min-width: 768px) {
+  .headerBanner > div > p:first-child {
+    font-size: 96px;
+  }
+
+  .headerBanner > div {
+    margin-left: 20px;
+  }
+
+  .headerBanner > div > div > a {
+    margin-left: 20px;
+  }
+
+  .headerBanner > div > p:first-child {
+    margin-left: 20px;
+  }
+  .headerBanner > div > p:last-of-type {
+    margin-left: 20px;
+  }
+}
