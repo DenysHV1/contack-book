@@ -3,13 +3,9 @@ import AppBar from './AppBar/AppBar';
 import Loader from './Loader/Loader';
 
 const Layout = ({ children }) => {
-  const style = {
-    maxWidth: 1000,
-    margin: '0 auto',
-    padding: '0 20px',
-  };
+ 
   return (
-    <div style={style}>
+    <div className='container'>
       <AppBar />
       <Suspense fallback={<Loader />}>{children}</Suspense>
     </div>

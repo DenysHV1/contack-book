@@ -6,6 +6,7 @@ import 'the-new-css-reset/css/reset.css';
 import 'modern-normalize';
 import App from './components/App';
 import './index.css';
+import './fonts/fonts.css'
 
 import { Provider } from 'react-redux';
 
