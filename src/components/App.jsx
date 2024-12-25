@@ -4,7 +4,7 @@ import { refreshUser } from '../redux/auth/operations';
 import { selectIsRefreshing } from '../redux/auth/selectors';
 
 import Loader from './Loader/Loader';
-import Layout from './Layout';
+import Layout from './Layout/Layout';
 import PrivateRoute from './PrivateRoute';
 
 import { Toaster } from 'react-hot-toast';
